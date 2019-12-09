@@ -1,0 +1,220 @@
+.attribution { 
+    font-size: 11px; text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+.container {
+    display: flex;
+}
+.container-sub {
+    width: 60%;
+    background:
+    hsl(0, 100%, 98%) url(images/bg-pattern-desktop.svg);
+        background-size: auto;
+    vertical-align: top;
+    background-size: contain;
+    position: relative;
+   
+}
+.container-sec {
+    margin-top: 8%;
+    margin-left: 20%;
+}
+.small {
+    display:none;
+}
+.text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.header {
+    color: hsl(0, 36%, 70%);
+    font-weight: 300;
+    font-size: 400%;
+    text-transform: uppercase;
+    letter-spacing: 15px;
+    line-height: 1;
+}
+*, ::before, ::after {
+    margin: 0;
+    padding: 0;
+}
+.head {
+    display: block;
+    color: black;
+    font-weight: 400;
+}
+
+.paragraph {
+    color: hsl(0, 36%, 70%);
+    line-height: 1.5;
+    text-align: left;
+    width: 100%;
+    padding: 20px 0px;
+}
+.email-form {
+    display: inline;
+}
+.email {
+    border-radius: 40px;
+    border: 1px solid 
+hsl(0, 36%, 70%);
+padding: 10px 16px;
+width: 100%;
+box-sizing: border-box;
+font-size: 14px;
+line-height: 22px;
+color:
+hsl(0, 36%, 70%);
+outline:
+    hsl(0, 74%, 74%);
+    background: url("../images/icon-error.svg");
+;
+    
+
+}
+.email:invalid {
+    
+    background-repeat: no-repeat;
+    background-position-x: 80%;
+    background-position-y: center;
+}
+.email:invalid {
+    border: 1.8px solid rgb(190, 82, 82);
+    margin-bottom: 2.5px;
+}
+.input-group_button {
+    padding: 9px 16px;
+    width: 65px;
+}
+.input-group_button{
+    border-radius: 40px;
+    background: linear-gradient(135deg, 
+hsl(0, 80%, 86%),
+hsl(0, 74%, 74%));
+
+font-size: 18px;
+line-height: 22px;
+position: absolute;
+right: 0;
+border:
+transparent 1px solid;
+box-shadow: 0 8px 20px
+    hsla(0, 74%, 74%, .5);
+    transition: all .25s ease;
+}
+.input-group_button {
+    font-size: 18px;
+    line-height: 22px;
+}
+.input-group_button:active, .input-group_button:focus {
+    background: hsl(0, 36%, 70%);
+}
+.invalid-message {
+    position: relative;
+    right: 200px;
+    top: 8px;
+}
+
+.invalid-message {
+/* border: solid red; */
+color: darkred;
+position: relative;
+bottom: 25px;
+left: 20px;
+}
+
+
+.container2 {
+    width: 40%;
+}
+.full-image {
+width: 100%;
+}
+@media screen and (max-width: 1100px) {
+    .footer-section {
+        height: 100vh;
+    }
+    .container-sub-1 {
+        width: 40%;
+    }
+    .container2 {
+        width: 60%;
+    }
+    .full-image {
+        height: 100vh
+    }
+    .header{
+        letter-spacing: 10px;
+        font-size: 300%;
+    }
+  
+    .email {
+        margin-bottom: 30px;
+    }
+    .input-group_button {
+        padding: 9px 16px;
+        width: 80px;
+    }
+    a {
+        color: ghostwhite;
+        text-decoration-line: none;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        
+}
+}
+
+@media screen and (max-width: 650px) {
+    .container-sub {
+        width: 100vw;
+    }
+    .small {
+        display: unset;
+    }
+    .hero-mobile {
+        width: 100%;
+    }
+    .container2 {
+        display: none;
+    }
+    .container-sec{
+        margin-top: 8%;
+        margin-left: 8%;
+    }
+    .text {
+        text-align: center;
+        position: unset;
+        top: unset;
+        left: unset;
+        transform: unset;
+    }
+    .paragraph {
+        text-align: center;
+        width: unset;
+        padding: 20px 0px;
+    }
+    .input-group_button {
+        padding: 9px 16px;
+        width: 80px;
+    }
+    .email {
+        padding: 14px 0 14px 30px;
+        width: 58%;
+    }
+    .input-group_button {
+        padding: 14px 30px;
+        position: absolute;
+        right: 10%;
+    }
+    .attribution {
+        padding: 10px 0;
+    }
+    .email-form:invalid {
+        background-position-x: 80%;
+        background-position-y: center;
+    }
+}
